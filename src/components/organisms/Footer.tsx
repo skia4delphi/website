@@ -1,5 +1,4 @@
 import { Container, Row, Col, Text } from '@nextui-org/react';
-import {Link} from 'react-router-dom';
 import { IoLogoGithub } from 'react-icons/io5';
 import styled from '@emotion/styled';
 
