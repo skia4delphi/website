@@ -1,4 +1,4 @@
-import { Container, Row, Col, Text } from '@nextui-org/react';
+import { Container, Row, Link, Text } from '@nextui-org/react';
 import { IoLogoGithub } from 'react-icons/io5';
 import styled from '@emotion/styled';
 
@@ -9,18 +9,11 @@ const Footer = styled.footer`
 export default () => (
   <Footer>
     <Container css={{paddingTop: 16}}>
-        <Row>
-          <Col><Text>{new Date().getUTCFullYear()} © Skia4Delphi. All rights reserved.</Text></Col>
-          <Col css={{
-            display: 'flex',
-            justifyContent: 'end',
-            fontSize: 30,
-            svg: {color: 'white'}
-          }}>
-            <a href="https://github.com/viniciusfbb/skia4delphi">
-              <IoLogoGithub />
-            </a>
-          </Col>
+        <Row css={{alignItems: 'center'}}>
+          <Text>{new Date().getUTCFullYear()} © Skia4Delphi. All rights reserved.</Text>
+          <Link css={{color: '$white', fontSize: 22, marginLeft: 'auto'}} href="https://github.com/viniciusfbb/skia4delphi">
+            <IoLogoGithub />
+          </Link>
         </Row>
     </Container>
   </Footer>

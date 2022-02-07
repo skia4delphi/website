@@ -2,11 +2,11 @@ import { Container, Text } from "@nextui-org/react";
 import styled from '@emotion/styled';
 
 const Content = styled.div`
-  height: calc(100vh - 130px);
-  min-height: max-content;
+  min-height: calc(100vh - 130px);
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding: 16px 0;
 `;
 
 export default () => (

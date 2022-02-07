@@ -13,13 +13,21 @@ const Wrapper = styled.div`
 export default () => (
   <Wrapper>
     <Col>
-      <Text h1>
+      <Text h1 css={{
+        '@xsMax': {
+          fontSize: '22px'
+        },
+      }}>
         Skia4Delphi is a cross-platform 2D graphics<br />
         API for Delphi based on<br />
       </Text>
-      <Text h1 css={{textGradient: '90deg, $red500 0%, $yellow500 80%'}}>Google's Skia Graphics Library</Text>
+      <Text h1 css={{
+        textGradient: '90deg, $red500 0%, $yellow500 80%',
+        '@xsMax': {
+          fontSize: '22px'
+        }}}>Google's Skia Graphics Library</Text>
 
-      <Row css={{justifyContent: 'center', display: 'flex', paddingTop: 16, gap: 16}}>
+      <Row css={{justifyContent: 'center', display: 'flex', paddingTop: 16, gap: 16, '@smMax': {flexWrap: 'wrap'}}}>
         <Link to="/about">
           <Button css={{padding: '$10'}} color="secondary">
             <Col>
