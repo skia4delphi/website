@@ -23,11 +23,6 @@ export default () => (
       </Link>
     </li>
     <li>
-      <a href="https://github.com/viniciusfbb/skia4delphi#summary">
-        <Text weight="bold" css={textGradient}>Documentation</Text>
-      </a>
-    </li>
-    <li>
       <a href="https://github.com/viniciusfbb/skia4delphi/releases">
         <Text weight="bold" css={textGradient}>Download</Text>
       </a>
