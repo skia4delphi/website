@@ -8,7 +8,7 @@ const Footer = styled.footer`
 
 export default () => (
   <Footer>
-    <Container css={{paddingTop: 16}}>
+    <Container css={{paddingTop: 16, paddingBottom: 16}}>
         <Row css={{alignItems: 'center'}}>
           <Text>{new Date().getUTCFullYear()} © Skia4Delphi. All rights reserved.</Text>
           <Link css={{color: '$white', fontSize: 22, marginLeft: 'auto'}} href="https://github.com/viniciusfbb/skia4delphi">

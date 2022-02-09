@@ -1,4 +1,4 @@
-import { Col, NextUIProvider } from '@nextui-org/react';
+import { Col, NextUIProvider, globalCss } from '@nextui-org/react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import "@fontsource/rubik";
@@ -15,21 +15,30 @@ const ContentCss = {
   backgroundImage: `url(${backgroundImage})`,
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat'
-}
+};
 
-export default () => (
-  <NextUIProvider theme={theme}>
-    <BrowserRouter>
-      <Col css={ContentCss}>
-        <Header />
-        <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-          </Routes>
-        </main>
-        <Footer />
-      </Col>
-    </BrowserRouter>
-  </NextUIProvider>
-);
+const globalStyles = globalCss({
+  body: {
+    backgroundColor: '$black'
+  }
+});
+
+export default () => {
+  globalStyles();
+  return (
+    <NextUIProvider theme={theme}>
+      <BrowserRouter>
+        <Col css={ContentCss}>
+          <Header />
+          <main>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+            </Routes>
+          </main>
+          <Footer />
+        </Col>
+      </BrowserRouter>
+    </NextUIProvider>
+  );
+};
