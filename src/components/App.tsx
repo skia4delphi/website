@@ -1,10 +1,10 @@
 import { Col, NextUIProvider, globalCss } from '@nextui-org/react';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import "@fontsource/rubik";
+import '@fontsource/rubik';
 import backgroundImage from './bg.jpg';
 
-import { theme } from '../theme';
+import theme from '../theme';
 import About from './pages/About';
 import Home from './pages/Home';
 import Header from './organisms/Header';
@@ -14,13 +14,13 @@ const ContentCss = {
   height: '100%',
   backgroundImage: `url(${backgroundImage})`,
   backgroundSize: 'cover',
-  backgroundRepeat: 'no-repeat'
+  backgroundRepeat: 'no-repeat',
 };
 
 const globalStyles = globalCss({
   body: {
-    backgroundColor: '$black'
-  }
+    backgroundColor: '$black',
+  },
 });
 
 export default () => {

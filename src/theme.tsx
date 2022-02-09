@@ -1,6 +1,6 @@
-import { createTheme } from "@nextui-org/react"
+import { createTheme } from '@nextui-org/react';
 
-export const theme = createTheme({
+export default createTheme({
   type: 'dark',
   theme: {
     colors: {
@@ -9,6 +9,6 @@ export const theme = createTheme({
     },
     fonts: {
       sans: "Rubik, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto'",
-    }
-  }
+    },
+  },
 });

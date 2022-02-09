@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { Text } from '@nextui-org/react';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Menu = styled.ul`
   display: flex;
@@ -11,8 +11,8 @@ const Menu = styled.ul`
 
 const textGradient = {
   '&:hover': {
-    textGradient: '45deg, $red200 -20%, $red500 50%'
-  }
+    textGradient: '45deg, $red200 -20%, $red500 50%',
+  },
 };
 
 export default () => (
@@ -33,4 +33,4 @@ export default () => (
       </a>
     </li>
   </Menu>
-)
+);
