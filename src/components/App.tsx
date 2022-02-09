@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import styled from '@emotion/styled';
 import '@fontsource/rubik';
 import backgroundImage from './bg.jpg';
@@ -20,7 +20,7 @@ const Content = styled.div({
 });
 
 export default () => (
-  <BrowserRouter>
+  <HashRouter>
     <Content>
       <Header />
       <main>
@@ -31,5 +31,5 @@ export default () => (
       </main>
       <Footer />
     </Content>
-  </BrowserRouter>
+  </HashRouter>
 );
