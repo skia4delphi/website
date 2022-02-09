@@ -9,9 +9,14 @@ const Menu = styled.ul`
   gap: 32px;
 `;
 
-const textGradient = {
+const textCss = {
+  fontSize: '1.2em',
   '&:hover': {
     textGradient: '45deg, $red200 -20%, $red500 50%',
+  },
+  '@smMax': {
+    fontSize: '1em',
+    flexWrap: 'wrap',
   },
 };
 
@@ -19,17 +24,17 @@ export default () => (
   <Menu>
     <li>
       <Link to="/about">
-        <Text weight="bold" css={textGradient}>About</Text>
+        <Text weight="bold" css={textCss}>About</Text>
       </Link>
     </li>
     <li>
-      <a href="https://github.com/viniciusfbb/skia4delphi/releases">
-        <Text weight="bold" css={textGradient}>Download</Text>
+      <a href="https://github.com/skia4delphi/skia4delphi/releases">
+        <Text weight="bold" css={textCss}>Download</Text>
       </a>
     </li>
     <li>
-      <a href="https://github.com/viniciusfbb/skia4delphi">
-        <Text weight="bold" css={textGradient}>Github</Text>
+      <a href="https://github.com/skia4delphi/skia4delphi">
+        <Text weight="bold" css={textCss}>Github</Text>
       </a>
     </li>
   </Menu>

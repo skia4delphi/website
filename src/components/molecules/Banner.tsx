@@ -5,7 +5,6 @@ import {
 import { Link } from 'react-router-dom';
 
 const Wrapper = styled.div`
-  height: calc(100vh - 130px);
   align-items: center;
   justify-content: center;
   display: flex;
@@ -41,16 +40,29 @@ export default () => (
       </Text>
 
       <Row css={{
-        justifyContent: 'center', display: 'flex', paddingTop: 16, gap: 16, '@smMax': { flexWrap: 'wrap' },
+        justifyContent: 'center',
+        display: 'flex',
+        paddingTop: 16,
+        gap: 16,
+        '@smMax': { flexWrap: 'wrap' },
       }}
       >
         <Link to="/about">
-          <Button css={{ padding: '$10' }} color="secondary">
+          <Button
+            color="secondary"
+            css={{
+              padding: '$12',
+              minWidth: 220,
+            }}
+          >
             <Col>
               <Text
                 span
                 css={{
-                  fontSize: 18, fontWeight: '$bold', display: 'block', height: 16,
+                  fontSize: 20,
+                  fontWeight: '$bold',
+                  display: 'block',
+                  height: 16,
                 }}
               >
                 Learn more
@@ -60,7 +72,7 @@ export default () => (
           </Button>
         </Link>
         <Button
-          css={{ padding: '$10' }}
+          css={{ padding: '$12', minWidth: 220 }}
           color="primary"
           onClick={() => {
             window.location.href = 'https://github.com/viniciusfbb/skia4delphi/releases/latest';
@@ -70,7 +82,10 @@ export default () => (
             <Text
               span
               css={{
-                fontSize: 18, fontWeight: '$bold', display: 'block', height: 16,
+                fontSize: 20,
+                fontWeight: '$bold',
+                display: 'block',
+                height: 16,
               }}
             >
               Download

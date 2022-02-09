@@ -1,35 +1,35 @@
-import { Col, NextUIProvider, globalCss } from '@nextui-org/react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-
+import styled from '@emotion/styled';
 import '@fontsource/rubik';
 import backgroundImage from './bg.jpg';
 
-import theme from '../theme';
 import About from './pages/About';
 import Home from './pages/Home';
 import Header from './organisms/Header';
 import Footer from './organisms/Footer';
 
-const ContentCss = {
-  height: '100%',
+const Content = styled.div({
+  minHeight: '100vh',
   backgroundImage: `url(${backgroundImage})`,
   backgroundSize: 'cover',
+  backgroundColor: '$background',
   backgroundRepeat: 'no-repeat',
-};
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'space-between',
+});
 
 export default () => (
-  <NextUIProvider theme={theme}>
-    <BrowserRouter>
-      <Col css={ContentCss}>
-        <Header />
-        <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-          </Routes>
-        </main>
-        <Footer />
-      </Col>
-    </BrowserRouter>
-  </NextUIProvider>
+  <BrowserRouter>
+    <Content>
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </main>
+      <Footer />
+    </Content>
+  </BrowserRouter>
 );
