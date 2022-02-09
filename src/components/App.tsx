@@ -17,28 +17,19 @@ const ContentCss = {
   backgroundRepeat: 'no-repeat',
 };
 
-const globalStyles = globalCss({
-  body: {
-    backgroundColor: '#030b1f',
-  },
-});
-
-export default () => {
-  globalStyles();
-  return (
-    <NextUIProvider theme={theme}>
-      <BrowserRouter>
-        <Col css={ContentCss}>
-          <Header />
-          <main>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-            </Routes>
-          </main>
-          <Footer />
-        </Col>
-      </BrowserRouter>
-    </NextUIProvider>
-  );
-};
+export default () => (
+  <NextUIProvider theme={theme}>
+    <BrowserRouter>
+      <Col css={ContentCss}>
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </main>
+        <Footer />
+      </Col>
+    </BrowserRouter>
+  </NextUIProvider>
+);
