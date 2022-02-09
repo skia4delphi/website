@@ -33,7 +33,8 @@ export default () => (
               display: 'none',
             },
           }}
-          href="https://github.com/viniciusfbb/skia4delphi">
+          href="https://github.com/viniciusfbb/skia4delphi"
+        >
           <IoLogoGithub />
         </Link>
       </Row>

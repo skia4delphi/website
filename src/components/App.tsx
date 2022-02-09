@@ -19,7 +19,7 @@ const ContentCss = {
 
 const globalStyles = globalCss({
   body: {
-    backgroundColor: '$black',
+    backgroundColor: '#030b1f',
   },
 });
 
