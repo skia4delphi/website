@@ -11,5 +11,8 @@ export default createTheme({
     fonts: {
       sans: "Rubik, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto'",
     },
+    fontSizes: {
+      lg: '2rem',
+    },
   },
 });

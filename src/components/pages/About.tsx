@@ -15,20 +15,18 @@ export default () => (
       <Text h2>
         About Skia4Delphi
       </Text>
-      <Text>
-        The project was founded by Vinicius Felipe Botelho Barbosa, technology
-        enthusiast, Systems Engineering student, with over 15 years of
-        experience with Delphi development, with co-participation of Paulo César
-        Botelho Barbosa.
-        The library was made from developer to developer. Hope it helps and
-        somehow adds something for everyone.
-        Enjoy!
+      <Text size="1.1em">
+        The project was founded by Paulo César Botelho Barbosa and Vinícius
+        Felipe Botelho Barbosa, enthusiastic Delphi developers with over 15
+        years of programming experience.
+        The library was made from developer to developer.
+        Hope it helps and somehow adds something for everyone.
       </Text>
       <hr />
       <Text h2>
         Contributions
       </Text>
-      <Text>
+      <Text size="1.1em">
         Skia4Delphi is an open source library that requires a lot of personal investment,
         to do it with the highest quality we have received support
         of many different people. We would like to be very grateful to
@@ -50,7 +48,7 @@ export default () => (
       <Text h2>
         What is Skia?
       </Text>
-      <Text>
+      <Text size="1.1em">
         Skia is an open source library for drawing 2D Text, Geometries, Images,
         focused on accurate, high quality and high performance rendering,
         which provides common APIs that work across a variety of hardware and
