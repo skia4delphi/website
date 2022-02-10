@@ -38,6 +38,7 @@ export default () => (
         and
         {' '}
         <b>Ian Barker</b>
+        {' '}
         for giving us support and guidance on this journey.
         <br />
         Nevertheless, we invite you developer, interested in helping us to build
