@@ -20,6 +20,8 @@ export default () => (
         }}
       >
         <Text>
+          2021 -
+          {' '}
           {new Date().getUTCFullYear()}
           {' '}
           © Skia4Delphi. All rights reserved.
