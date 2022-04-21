@@ -41,8 +41,13 @@ export default () => (
         <br />
         Nevertheless, we invite you developer, interested in helping us to build
         a great tool to collaborate and share some of your time. We are a very
-        friendly and open-minded community.
-        and we hope we can do great things together.
+        friendly and open-minded community and we hope we can do great things together.
+        <br />
+        If you preferer helping us with financial contrubutions feel free to do it via
+        our open collective page, any amount is a lot as it help us to keep this project
+        live and free.
+        <br />
+        <a href="https://opencollective.com/skia4delphi" target="_blank">https://opencollective.com/skia4delphi</a>
       </Text>
       <hr />
       <Text h2>
