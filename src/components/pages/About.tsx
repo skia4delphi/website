@@ -47,7 +47,7 @@ export default () => (
         our open collective page, any amount is a lot as it help us to keep this project
         live and free.
         <br />
-        <a href="https://opencollective.com/skia4delphi" target="_blank">https://opencollective.com/skia4delphi</a>
+        <a href="https://opencollective.com/skia4delphi" rel="noreferrer" target="_blank">https://opencollective.com/skia4delphi</a>
       </Text>
       <hr />
       <Text h2>
