@@ -19,8 +19,8 @@ export default () => (
         The project was founded by Paulo César Botelho Barbosa and Vinícius
         Felipe Botelho Barbosa, enthusiastic Delphi developers with over 15
         years of programming experience.
-        The library was made from developer to developer.
-        Hope it helps and somehow adds something for everyone.
+        The library was made from developers to developers and we hope it 
+        helps and somehow adds value for everyone.
       </Text>
       <hr />
       <Text h2>
