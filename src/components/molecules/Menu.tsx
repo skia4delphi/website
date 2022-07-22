@@ -37,5 +37,10 @@ export default () => (
         <Text weight="bold" css={textCss}>Github</Text>
       </a>
     </li>
+    <li>
+      <a href="https://opencollective.com/skia4delphi">
+        <Text weight="bold" css={textCss}>Contribute</Text>
+      </a>
+    </li>
   </Menu>
 );
